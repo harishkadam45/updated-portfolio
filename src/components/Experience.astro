@@ -1,0 +1,120 @@
+---
+import { experience } from '@/data/content';
+---
+
+<section class="section" id="experience">
+  <div class="container">
+    <h2 class="section-heading reveal"><span class="num">03.</span> Experience</h2>
+
+    <div class="timeline">
+      {experience.map((job, i) => (
+        <article class="timeline-item reveal" style:list={{ '--d': i }}>
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-card card">
+            <header class="timeline-header">
+              <h3 class="timeline-role">
+                {job.role}
+                <span class="timeline-at">@ {job.company}</span>
+              </h3>
+              <p class="timeline-period">{job.period}</p>
+              {job.location && <p class="timeline-location">{job.location}</p>}
+            </header>
+            <ul role="list" class="timeline-points">
+              {job.points.map((point) => (
+                <li>{point}</li>
+              ))}
+            </ul>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .timeline {
+    position: relative;
+    display: grid;
+    gap: var(--space-6);
+    max-width: 52rem;
+    margin-left: 0;
+    padding-left: var(--space-8);
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(var(--primary), transparent);
+    opacity: 0.3;
+  }
+
+  .timeline-item {
+    position: relative;
+  }
+
+  .timeline-marker {
+    position: absolute;
+    left: calc(var(--space-8) * -1 + 11px);
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background: var(--gradient);
+    box-shadow: 0 0 0 4px rgba(109, 123, 255, 0.15);
+    top: 1.6rem;
+  }
+
+  .timeline-card {
+    padding: var(--space-6);
+  }
+
+  .timeline-header {
+    display: grid;
+    gap: 0.25rem;
+    margin-bottom: var(--space-4);
+  }
+
+  .timeline-role {
+    font-size: var(--fs-lg);
+  }
+
+  .timeline-at {
+    color: var(--primary);
+  }
+
+  .timeline-period {
+    font-family: var(--font-mono);
+    font-size: var(--fs-xs);
+    color: var(--text-3);
+  }
+
+  .timeline-location {
+    font-size: var(--fs-sm);
+    color: var(--text-3);
+  }
+
+  .timeline-points {
+    display: grid;
+    gap: var(--space-2);
+    color: var(--text-2);
+  }
+
+  .timeline-points li {
+    position: relative;
+    padding-left: 1.3rem;
+  }
+
+  .timeline-points li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+  }
+
+  .reveal {
+    transition-delay: calc(var(--d, 0) * 100ms);
+  }
+</style>

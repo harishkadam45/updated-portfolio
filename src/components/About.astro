@@ -1,0 +1,106 @@
+---
+import Icon from './Icon.astro';
+import { site } from '@/data/site';
+---
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h2 class="section-heading"><span class="num">01.</span> About Me</h2>
+
+        <div class="about-copy">
+          <p>
+            Hello! I'm <strong>{site.name}</strong>, a {site.role.toLowerCase()}
+            based in {site.location}. My passion grew from curiosity about how the
+            web works into a career building products that people use every day.
+          </p>
+          <p>
+            I enjoy the intersection of design and engineering — taking a beautiful
+            idea and bringing it to life with clean, maintainable, and performant
+            code. I care deeply about accessibility, semantics, and the details
+            that make an interface feel effortless.
+          </p>
+          <p>
+            When I'm not building, I love exploring new tools, sharpening my
+            problem-solving skills, and continuously learning to level up my craft.
+          </p>
+        </div>
+
+        <a href="#contact" class="btn btn-ghost">
+          More about me <Icon name="arrow-right" size={16} />
+        </a>
+      </div>
+
+      <div class="about-card reveal" style="--d:1">
+        <div class="photo-frame">
+          <div class="photo-placeholder">
+            <span>&lt;/&gt;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: var(--space-10);
+    align-items: center;
+  }
+
+  .about-copy {
+    display: grid;
+    gap: var(--space-4);
+    color: var(--text-2);
+    margin-bottom: var(--space-6);
+    max-width: 42rem;
+  }
+
+  .about-copy strong {
+    color: var(--text-1);
+  }
+
+  .photo-frame {
+    position: relative;
+    max-width: 320px;
+    margin-inline: auto;
+    aspect-ratio: 4 / 5;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(160deg, var(--bg-3), var(--bg-1));
+    border: 1px solid var(--border);
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+  }
+
+  /* decorative offset frame */
+  .photo-frame::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    transform: translate(14px, 14px);
+    border: 1px solid rgba(109, 123, 255, 0.4);
+    border-radius: var(--radius-lg);
+    z-index: -1;
+  }
+
+  .photo-placeholder {
+    font-family: var(--font-mono);
+    font-size: 4rem;
+    color: var(--border-strong);
+    font-weight: 700;
+  }
+
+  @media (max-width: 820px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-8);
+    }
+    .photo-frame {
+      max-width: 260px;
+    }
+  }
+</style>

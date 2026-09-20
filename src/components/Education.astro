@@ -1,0 +1,61 @@
+---
+import { education } from '@/data/content';
+---
+
+<section class="section" id="education">
+  <div class="container">
+    <h2 class="section-heading reveal"><span class="num">05.</span> Education</h2>
+
+    <div class="edu-grid">
+      {education.map((edu, i) => (
+        <div class="card edu-card reveal" style:list={{ '--d': i }}>
+          <span class="edu-degree">{edu.degree}</span>
+          {edu.detail && <p class="edu-detail">{edu.detail}</p>}
+          <p class="edu-institution">{edu.institution}</p>
+          <span class="badge edu-period">{edu.period}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .edu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-5);
+    max-width: 60rem;
+  }
+
+  .edu-card {
+    padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .edu-degree {
+    font-size: var(--fs-lg);
+    font-weight: 700;
+  }
+
+  .edu-detail {
+    color: var(--text-2);
+    font-size: var(--fs-sm);
+  }
+
+  .edu-institution {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: var(--fs-sm);
+  }
+
+  .edu-period {
+    margin-top: auto;
+    align-self: flex-start;
+  }
+
+  .reveal {
+    transition-delay: calc(var(--d, 0) * 100ms);
+  }
+</style>

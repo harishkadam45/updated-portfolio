@@ -1,0 +1,92 @@
+---
+import { skills } from '@/data/content';
+import Icon from './Icon.astro';
+---
+
+<section class="section" id="skills">
+  <div class="container">
+    <h2 class="section-heading reveal"><span class="num">04.</span> Skills</h2>
+
+    <div class="skills-grid">
+      {skills.map((group, i) => (
+        <div class="card skill-group reveal" style:list={{ '--d': i }}>
+          <div class="skill-head">
+            <span class="skill-icon"><Icon name={group.icon} size={22} /></span>
+            <h3 class="skill-title">{group.title}</h3>
+          </div>
+          <ul role="list" class="skill-list">
+            {group.skills.map((skill) => (
+              <li class="skill-item">
+                <Icon name="check" size={14} />
+                <span>{skill}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-5);
+  }
+
+  .skill-group {
+    padding: var(--space-6);
+  }
+
+  .skill-head {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-5);
+  }
+
+  .skill-icon {
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: var(--radius-md);
+    background: rgba(109, 123, 255, 0.1);
+    border: 1px solid rgba(109, 123, 255, 0.3);
+    color: var(--primary);
+  }
+
+  .skill-title {
+    font-size: var(--fs-lg);
+  }
+
+  .skill-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2);
+  }
+
+  .skill-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-2);
+    font-size: var(--fs-sm);
+  }
+
+  .skill-item svg {
+    color: var(--primary);
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 420px) {
+    .skill-list {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .reveal {
+    transition-delay: calc(var(--d, 0) * 100ms);
+  }
+</style>

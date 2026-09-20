@@ -1,0 +1,57 @@
+---
+import { site } from '@/data/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  type?: string;
+}
+
+const {
+  title = `${site.name} — ${site.role}`,
+  description = `${site.headline} Explore projects, experience, skills and education of ${site.name}.`,
+  ogImage = '/og-image.svg',
+  type = 'website',
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site ?? site.url);
+---
+
+<title set:html={title} />
+<meta name="description" content={description} />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" />
+<meta name="generator" content={Astro.generator} />
+<meta name="author" content={site.name} />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#06070e" />
+
+<link rel="canonical" href={canonical} />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+<!-- Open Graph -->
+<meta property="og:type" content={type} />
+<meta property="og:site_name" content={site.name} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={new URL(ogImage, Astro.site ?? site.url)} />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={new URL(ogImage, Astro.site ?? site.url)} />
+
+<!-- Structured data -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: site.name,
+  jobTitle: site.role,
+  email: site.email,
+  telephone: site.phone,
+  url: site.url,
+  sameAs: [site.socials.github, site.socials.linkedin],
+})} />

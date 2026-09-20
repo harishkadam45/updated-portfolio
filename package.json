@@ -1,0 +1,26 @@
+{
+  "name": "harish-kadam-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio of Harish Kadam - Software / Frontend Developer",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "keywords": [
+    "portfolio",
+    "astro",
+    "frontend",
+    "developer"
+  ],
+  "author": "Harish Kadam",
+  "license": "MIT",
+  "dependencies": {
+    "astro": "^7.2.8",
+    "@astrojs/sitemap": "^3.3.0",
+    "@astrojs/rss": "^4.0.2"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://harishkadam.dev/sitemap-index.xml
