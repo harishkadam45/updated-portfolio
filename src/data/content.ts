@@ -35,10 +35,10 @@ export const projects: Project[] = [
   {
     title: 'Personal Portfolio',
     description:
-      'A modern, SEO-optimized portfolio built with Astro, featuring a custom design system, dark theme, and full Lighthouse-friendly performance.',
+      'A modern, SEO-optimized portfolio built with Astro, featuring a custom design system, dark blue/violet theme, and full Lighthouse-friendly performance across all devices.',
     tags: ['Astro', 'TypeScript', 'CSS'],
-    github: 'https://github.com/harishkadam45',
-    live: 'https://harishkadam.dev',
+    github: 'https://github.com/harishkadam45/updated-portfolio',
+    live: 'https://updated-portfolio-three-iota.vercel.app',
     featured: true,
     year: '2026',
   },
