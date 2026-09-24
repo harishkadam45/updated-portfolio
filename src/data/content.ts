@@ -1,4 +1,4 @@
-﻿import type { IconName } from '@/components/Icon.astro';
+import type { IconName } from '@/components/Icon.astro';
 
 export interface Project {
   title: string;
@@ -119,13 +119,13 @@ export const education: EducationItem[] = [
   {
     degree: 'M.Sc. Computer Science (MCS)',
     institution: 'Pune University',
-    period: '2023 - 2025',
+    period: '2022 - 2024',
     detail: 'Master of Computer Science',
   },
   {
     degree: 'B.Sc. Computer Science (BCS)',
     institution: 'Pune University',
-    period: '2020 - 2023',
+    period: '2019 - 2022',
     detail: 'Bachelor of Computer Science',
   },
 ];
