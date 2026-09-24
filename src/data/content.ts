@@ -1,4 +1,4 @@
-import type { IconName } from '@/components/Icon.astro';
+﻿import type { IconName } from '@/components/Icon.astro';
 
 export interface Project {
   title: string;
@@ -53,9 +53,9 @@ export const projects: Project[] = [
     year: '2026',
   },
   {
-    title: 'Musafir Café Website',
+    title: 'Musafir CafÃ© Website',
     description:
-      'A polished, fully responsive café website built with React + Vite - featuring an appetizing menu showcase and a clean, modern layout that loads fast on any device.',
+      'A polished, fully responsive cafÃ© website built with React + Vite - featuring an appetizing menu showcase and a clean, modern layout that loads fast on any device.',
     tags: ['React', 'Vite', 'JavaScript'],
     github: 'https://github.com/harishkadam45/musafir-cafe-website',
     live: 'https://musafir-cafe-website.vercel.app',
@@ -80,7 +80,7 @@ export const experience: ExperienceItem[] = [
     location: 'Pune, India',
     points: [
       'Design, build, and deploy complete, SEO-optimized business websites end-to-end - from discovery and wireframes through to launch and ongoing maintenance.',
-      'Own the full project lifecycle with clients (e.g. Arnav Engineers, Musafir Café), choosing the right stack for each build.',
+      'Own the full project lifecycle with clients (e.g. Arnav Engineers, Musafir CafÃ©), choosing the right stack for each build.',
       'Deliver fast, accessible, responsive sites and ship across GitHub + Vercel while keeping every page optimized for search and Core Web Vitals.',
     ],
   },
@@ -118,14 +118,15 @@ export const skills: SkillGroup[] = [
 export const education: EducationItem[] = [
   {
     degree: 'M.Sc. Computer Science (MCS)',
-    institution: 'Your University',
+    institution: 'Pune University',
     period: '2023 - 2025',
     detail: 'Master of Computer Science',
   },
   {
     degree: 'B.Sc. Computer Science (BCS)',
-    institution: 'Your University',
+    institution: 'Pune University',
     period: '2020 - 2023',
     detail: 'Bachelor of Computer Science',
   },
 ];
+
