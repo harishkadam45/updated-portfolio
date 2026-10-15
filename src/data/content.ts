@@ -33,12 +33,11 @@ export interface EducationItem {
 
 export const projects: Project[] = [
   {
-    title: 'Personal Portfolio',
+    title: 'Fix It Home Computer Repair',
     description:
-      'A modern, SEO-optimized portfolio built with Astro, featuring a custom design system, dark blue/violet theme, and full Lighthouse-friendly performance across all devices.',
-    tags: ['Astro', 'TypeScript', 'CSS'],
-    github: 'https://github.com/harishkadam45/updated-portfolio',
-    live: 'https://updated-portfolio-three-iota.vercel.app',
+      'Website for a Brisbane on-site computer repair service covering virus removal, PC/Mac/laptop repair, data recovery and network setup - with clear pricing and quick call-to-action buttons.',
+    tags: ['Web Development', 'SEO', 'Responsive'],
+    live: 'https://www.fixmyhomecomputer.com.au/',
     featured: true,
     year: '2026',
   },
@@ -53,7 +52,7 @@ export const projects: Project[] = [
     year: '2026',
   },
   {
-    title: 'Musafir CafÃ© Website',
+    title: 'Musafir Café Website',
     description:
       'A polished, fully responsive cafÃ© website built with React + Vite - featuring an appetizing menu showcase and a clean, modern layout that loads fast on any device.',
     tags: ['React', 'Vite', 'JavaScript'],
@@ -62,12 +61,13 @@ export const projects: Project[] = [
     year: '2026',
   },
   {
-    title: 'Photo Gallery App',
+    title: 'Personal Portfolio',
     description:
-      'A responsive photo gallery built with React that lets you browse and search images dynamically from an external image API - rendered in a clean, adaptive grid across all devices.',
-    tags: ['React', 'REST API', 'JavaScript'],
-    github: 'https://github.com/harishkadam45/Photo-Gallery-App',
-    live: 'https://photo-gallery-app-vert.vercel.app',
+      'A modern, SEO-optimized portfolio built with Astro, featuring a custom design system, dark blue/violet theme, and full Lighthouse-friendly performance across all devices.',
+    tags: ['Astro', 'TypeScript', 'CSS'],
+    github: 'https://github.com/harishkadam45/updated-portfolio',
+    live: 'https://updated-portfolio-three-iota.vercel.app',
+    featured: true,
     year: '2026',
   },
 ];
@@ -80,7 +80,7 @@ export const experience: ExperienceItem[] = [
     location: 'Pune, India',
     points: [
       'Design, build, and deploy complete, SEO-optimized business websites end-to-end - from discovery and wireframes through to launch and ongoing maintenance.',
-      'Own the full project lifecycle with clients (e.g. Arnav Engineers, Musafir CafÃ©), choosing the right stack for each build.',
+      'Own the full project lifecycle with clients (e.g. Arnav Engineers, Fix It Home Computer Repair), choosing the right stack for each build.',
       'Deliver fast, accessible, responsive sites and ship across GitHub + Vercel while keeping every page optimized for search and Core Web Vitals.',
     ],
   },
@@ -106,7 +106,7 @@ export const skills: SkillGroup[] = [
   {
     title: 'Backend & Tools',
     icon: 'server',
-    skills: ['Node.js', 'Express', 'MongoDB', 'REST APIs', 'Git', 'Vite'],
+    skills: ['Node.js', 'Express', 'MongoDB', 'REST APIs', 'Git', 'GitHub', 'Python', 'Vite'],
   },
   {
     title: 'Other',

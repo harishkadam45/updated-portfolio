@@ -26,7 +26,7 @@ const currentYear = new Date().getFullYear();
           <a class="icon-link" href={site.socials.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
             <Icon name="linkedin" size={20} />
           </a>
-          <a class="icon-link" href={`mailto:${site.email}`} aria-label="Email">
+          <a class="icon-link" href={site.gmailCompose} target="_blank" rel="noopener noreferrer" aria-label="Email">
             <Icon name="mail" size={20} />
           </a>
           <a class="icon-link" href={`tel:${site.phone}`} aria-label="Phone">
@@ -48,7 +48,7 @@ const currentYear = new Date().getFullYear();
         <h4 class="footer-heading">Contact</h4>
         <ul role="list" class="footer-links">
           <li>
-            <a href={`mailto:${site.email}`}>{site.email}</a>
+            <a href={site.gmailCompose} target="_blank" rel="noopener noreferrer">{site.email}</a>
           </li>
           <li>
             <a href={`tel:${site.phone}`}>{site.phone}</a>

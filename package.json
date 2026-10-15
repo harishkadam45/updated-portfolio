@@ -1,7 +1,7 @@
 {
   "name": "harish-kadam-portfolio",
   "version": "1.0.0",
-  "description": "Personal portfolio of Harish Kadam - Software / Frontend Developer",
+  "description": "Personal portfolio of Harish Kadam - Software / Full Stack Developer",
   "type": "module",
   "scripts": {
     "dev": "astro dev",

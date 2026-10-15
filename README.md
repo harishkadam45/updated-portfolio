@@ -1,4 +1,4 @@
-# Harish Kadam — Portfolio
+# Harish Kadam - Portfolio
 
 A modern, SEO-optimized personal portfolio built with **Astro**, **TypeScript**, and a hand-rolled design system. Light on JavaScript, fast on all devices, and built to rank well.
 
@@ -9,13 +9,13 @@ A modern, SEO-optimized personal portfolio built with **Astro**, **TypeScript**,
 
 ## ✨ Features
 
-- **Static-first** — Astro static output, near-zero client JS
-- **SEO-optimized** — semantic HTML, canonical URLs, Open Graph + Twitter cards, `sitemap`, `robots.txt`, JSON-LD structured data, per-page metadata
-- **Custom design system** — design tokens via CSS custom properties. Dark blue/violet theme with gradient accents, glow orbs, and a subtle grid overlay
-- **Accessible** — semantic landmarks, ARIA labels, skip link, keyboard-friendly focus states, reduced-motion support
-- **Fast** — preconnected fonts, optimized images (WebP/AVIF), auto-inlined critical CSS
+- **Static-first** - Astro static output, near-zero client JS
+- **SEO-optimized** - semantic HTML, canonical URLs, Open Graph + Twitter cards, `sitemap`, `robots.txt`, JSON-LD structured data, per-page metadata
+- **Custom design system** - design tokens via CSS custom properties. Dark blue/violet theme with gradient accents, glow orbs, and a subtle grid overlay
+- **Accessible** - semantic landmarks, ARIA labels, skip link, keyboard-friendly focus states, reduced-motion support
+- **Fast** - preconnected fonts, optimized images (WebP/AVIF), auto-inlined critical CSS
 - **Reveal-on-scroll** animations that gracefully degrade without JavaScript
-- **Responsive** — fluid layout from mobile to desktop with a collapsible mobile menu
+- **Responsive** - fluid layout from mobile to desktop with a collapsible mobile menu
 
 ## 🧑‍💻 Sections
 
@@ -60,7 +60,7 @@ All content is centralized in `src/data/`:
 - **`site.ts`** → name, role, headline, email, phone, location, GitHub / LinkedIn, site URL
 - **`content.ts`** → projects, experience, skills, and education arrays
 
-Edit the values and the site updates automatically — no component changes needed.
+Edit the values and the site updates automatically - no component changes needed.
 
 ## 🔧 Commands
 
@@ -80,4 +80,4 @@ The build output is fully static in `dist/` and works on any host: **Vercel**, *
 
 ## 📄 License
 
-MIT — free to use and adapt.
+MIT - free to use and adapt.

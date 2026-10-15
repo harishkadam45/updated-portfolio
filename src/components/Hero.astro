@@ -36,7 +36,7 @@ import portrait from '@/assets/Harish_kadam.png';
           <a href="#projects" class="btn btn-primary">
             View Projects <Icon name="arrow-right" size={16} />
           </a>
-          <a href="#contact" class="btn btn-ghost">
+          <a href={site.gmailCompose} target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
             Get In Touch <Icon name="mail" size={16} />
           </a>
         </div>
@@ -48,7 +48,7 @@ import portrait from '@/assets/Harish_kadam.png';
           <a class="icon-link" href={site.socials.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
             <Icon name="linkedin" size={20} />
           </a>
-          <a class="icon-link" href={`mailto:${site.email}`} aria-label="Email">
+          <a class="icon-link" href={site.gmailCompose} target="_blank" rel="noopener noreferrer" aria-label="Email">
             <Icon name="mail" size={20} />
           </a>
         </div>
@@ -58,7 +58,7 @@ import portrait from '@/assets/Harish_kadam.png';
         <div class="portrait-frame">
           <Image
             src={portrait}
-            alt={`${site.name} — ${site.role}`}
+            alt={`${site.name} - ${site.role}`}
             width={2048}
             height={2048}
             class="portrait"

@@ -1,8 +1,9 @@
 export const site = {
   name: 'Harish Kadam',
-  role: 'Frontend Developer',
+  role: 'Full Stack Developer',
   headline: "I build fast, accessible, and delightful web experiences.",
   email: 'kadamharish450@gmail.com',
+  gmailCompose: 'https://mail.google.com/mail/?view=cm&fs=1&to=kadamharish450@gmail.com',
   phone: '+91 8208720039',
   location: 'Pune, India',
   url: 'https://harishkadam.dev',
@@ -13,6 +14,7 @@ export const site = {
 };
 
 export const navLinks = [
+  { label: 'Home', href: '#top' },
   { label: 'About', href: '#about' },
   { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#experience' },
