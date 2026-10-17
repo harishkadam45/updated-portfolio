@@ -33,6 +33,15 @@ export interface EducationItem {
 
 export const projects: Project[] = [
   {
+    title: 'India Multiparking',
+    description:
+      'Website for a Pune-based multi-level car parking company that designs, installs and maintains stack, puzzle, rotary and tower parking systems across India - with product showcases and a multi-step enquiry form with WhatsApp fallback.',
+    tags: ['Astro', 'SEO', 'Responsive'],
+    live: 'https://www.indiamultiparking.com/',
+    featured: true,
+    year: '2026',
+  },
+  {
     title: 'Fix It Home Computer Repair',
     description:
       'Website for a Brisbane on-site computer repair service covering virus removal, PC/Mac/laptop repair, data recovery and network setup - with clear pricing and quick call-to-action buttons.',
